@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - GiftHub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <style> 
+        body { 
+            color: black; 
+            font-family: Arial, sans-serif; 
+            background-color: #f8f9fa; 
+        } 
+        header, footer { 
+            background-color: lightblue; 
+            color: black; 
+            text-align: center; 
+            padding: 15px 0; 
+        } 
+        .navbar-nav { 
+            margin: 0 auto; 
+            flex-direction: row; 
+        } 
+        .navbar-dark .navbar-nav .nav-link { 
+            color: black;  
+            margin: 0 10px; 
+        } 
+        main { 
+            padding: 20px; 
+            margin-bottom: 60px; 
+            text-align: center; 
+        } 
+        section { 
+            margin-bottom: 40px; 
+        } 
+        .reward-item { 
+            margin-bottom: 30px; 
+        } 
+        .reward-item img { 
+            width: 100%; 
+            height: 200px; /* Set the desired height */ 
+            object-fit: cover; 
+            border-radius: 5px; 
+        } 
+        .reward-item h3 { 
+            margin: 10px 0; 
+        } 
+        .reward-item p { 
+            margin: 5px 0; 
+        } 
+        .reward-item ul { 
+            text-align: left; 
+            list-style-type: disc; /* Show bullet points */ 
+            padding-left: 20px;  /* Add padding to the left to align bullets */ 
+        } 
+        .reward-item ul li { 
+            margin-bottom: 5px; 
+        } 
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Payment</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="rewards.html">Rewards</a></li>
+                <li class="nav-item"><a class="nav-link" href="categories.html">Categories</a></li>
+                <li class="nav-item"><a class="nav-link" href="account.html">My Account</a></li>
+                <li class="nav-item"><a class="nav-link" href="support.html">Help & Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h2>Payment Information</h2>
+                <form action="otp.html">
+                    <div class="mb-3">
+                        <label for="cardName" class="form-label">Name on Card</label>
+                        <input type="text" class="form-control" id="cardName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="cardNumber" class="form-label">Card Number</label>
+                        <input type="text" class="form-control" id="cardNumber" required>
+                    </div>
+                    <div class="mb-3 row">
+                        <div class="col-md-6">
+                            <label for="expiryDate" class="form-label">Expiry Date</label>
+                            <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="cvv" class="form-label">CVV</label>
+                            <input type="text" class="form-control" id="cvv" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Submit Payment</button>
+                </form>
+                <h3 class="mt-4">Or Pay With</h3>
+                <div class="payment-options">
+                    <div class="payment-button apple-pay"><a href="confirmation.html">Apple Pay</a></div>
+                    <div class="payment-button google-pay">Google Pay</a></div>
+                    <div class="payment-button samsung-pay">Samsung Pay</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+

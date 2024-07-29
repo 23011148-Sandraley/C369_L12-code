@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rewards Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            color: black;
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        header, footer {
+            background-color: lightblue;
+            color: black;
+            text-align: center;
+            padding: 15px 0;
+        }
+        .navbar-nav {
+            margin: 0 auto;
+            flex-direction: row;
+        }
+        .navbar-dark .navbar-nav .nav-link {
+            color: black; 
+            margin: 0 10px;
+        }
+        main {
+            padding: 20px;
+            margin-bottom: 60px;
+            text-align: center;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        .reward-item {
+            margin-bottom: 30px;
+        }
+        .reward-item img {
+            width: 100%;
+            height: 200px; /* Set the desired height */
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .reward-item h3 {
+            margin: 10px 0;
+        }
+        .reward-item p {
+            margin: 5px 0;
+        }
+        .reward-item ul {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rewards Dashboard</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="rewards.html">Rewards</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="categories.html">Categories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="account.html">My Account</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="support.html">Help & Support</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Your Rewards</h2>
+            <div class="row">
+                <div class="col-md-4 reward-item">
+                    <img src="https://www.uob.com.sg/assets/web-resources/personal/images/promotions/cards/deals/index/categorypagefilter/crystal-jade-apr-24.jpg" alt="Reward Item Image">
+                    <a href="/rewards/crystalJade.html"><h3>Crystal Jade</h3></a>
+                    <ul>
+                        <li>12% off total bill with min. spend of S$80</li>
+                        <li>50% off selected signature dishes</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 reward-item">
+                    <img src="https://www.uob.com.sg/assets/web-resources/personal/images/promotions/cards/deals/index/categorypagefilter/amaris.jpg" alt="Reward Item Image">
+                    <a href="/rewards/amaris.html"><h3>Amaris</h3></a>
+                    <ul>
+                        <li>10% off purchase of Juliette Has A Gun Ode To Dullness 100ML</li>
+                        <li>Get a free Compagnie De Provence hand cream with any purchase of an Amaris product</li>
+                        
+                    </ul>
+                </div>
+                <div class="col-md-4 reward-item">
+                    <img src="https://www.uob.com.sg/assets/web-resources/personal/images/promotions/cards/deals/index/categorypagefilter/rws.jpg" alt="Reward Item Image">
+                    <a href="/rewards/rws.html"><h3>Resorts World Sentosa</h3></a>
+                    <ul>
+                        <li>Stay: 2 nights Unwind & Dine package with complimentary S$130 Dining Credits</li>
+                        <li>Attraction: Complimentary S$10 F&B combo set and popcorn with every S.E.A. Aquarium general admission ticket purchased</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Available Rewards</h2>
+            <div class="row">
+                <div class="col-md-4 reward-item">
+                    <img src="https://www.uob.com.sg/assets/web-resources/personal/images/promotions/cards/deals/index/categorypagefilter/expedia.jpg" alt="Reward Item Image">
+                    <a href="/rewards/expedia.html"><h3>Expedia</h3></a>
+                    <ul>
+                        <li>8% off hotel bookings</li>
+                        <li>S$15 off on flight + hotel package bookings</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 reward-item">
+                    <img src="https://www.uob.com.sg/assets/web-resources/personal/images/promotions/cards/deals/index/categorypagefilter/dancing-crab.jpg" alt="Reward Item Image">
+                    <a href="/rewards/dancingCrab.html"><h3>Dancing Crab</h3></a>
+                    <ul>
+                        <li>S$20 off with a min. spend of S$100</li>
+                        <li>S$50 off with a min. spend of S$250</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 reward-item">
+                    <img src="https://image-tc.galaxy.tf/wijpeg-9qxyt4qcrbmz5nl8wuxju53bu/file.jpg" alt="Reward Item Image">
+                    <a href="/rewards/laBrasserie.html"><h3>La Brasserie, The Fullerton Bay Hotel Singapore</h3></a>
+                    <ul>
+                        <li>15% off a la carte dinner food bill</li>
+                        <li>S$20 off Domaine De La Solitude Wine Dinner Bundle</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 reward-item">
+                    <img src="https://www.uob.com.sg/assets/web-resources/personal/images/promotions/cards/deals/index/categorypagefilter/melissa-apr-24.jpg" alt="Reward Item Image">
+                    <a href="/rewards/melissa.html"><h3>Melissa</h3></a>
+                    <ul>
+                        <li>20% off all your outbound shipments</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 reward-item">
+                    <img src="https://www.uob.com.sg/assets/web-resources/personal/images/promotions/cards/deals/index/categorypagefilter/hotels-apr-24.jpg" alt="Reward Item Image">
+                    <a href="/rewards/hotels.html"><h3>Hotels.com</h3></a>
+                    <ul>
+                        <li>8% off hotel bookings</li>
+                        <li>Booking period: Till 31 Jan 2025
+                            Travel period: Till 30 Jun 2025</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 reward-item">
+                    <img src="https://www.uob.com.sg/assets/web-resources/personal/images/promotions/cards/deals/index/categorypagefilter/rws.jpg" alt="Reward Item Image">
+                    <a href="/rewards/edge.html"><h3>Edge, Pan Pacific Singapore</h3></a>
+                    <ul>
+                        <li>20% off a la carte food bill</li>
+                        <li>15% off for Saturday Brunch</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 GiftHub. All rights reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
